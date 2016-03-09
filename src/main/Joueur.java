@@ -11,7 +11,7 @@ public class Joueur {
     private int _playerScore;
     private int _bonusCounter;
 
-    // Sets player name
+
     public Joueur(String name){
         _joueurName = name;
     }
@@ -26,17 +26,17 @@ public class Joueur {
         _firstBall.add(score);
     }
 
-    // Gets the first ball of a frame
+
     public int checkFirstBall(int frame) {
         return _firstBall.get(frame);
     }
 
-    // Sets the second ball of a frame
+   
     public void setSecondball(int frame, int score) throws IOException{
         _secondBall.add(score);
     }
 
-    // Gets the second ball of a frame
+   
     public int checkSecondBall(int frame) {
         return _secondBall.get(frame);
     }
